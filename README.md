@@ -1,6 +1,7 @@
 # Android-skin-loader
 
 添加依赖
+===
 
 ①在project gradle中添加：
         allprojects {
