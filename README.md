@@ -32,7 +32,7 @@
     public void onCreate() {
         super.onCreate();
         ...
-        SkinFileUtils.setUpSkinFile(this);
+        SkinManager.getInstance().init(this);
     }
 ~~~
     
