@@ -38,7 +38,7 @@
     
 * 需要替换皮肤的Activity继承SkinBaseActivity
 
-* 在xml文件里，  
+* 在xml文件里：
 ~~~java
         添加xmlns:skin="http://schemas.android.com/android/skin"
         给需要替换皮肤的View添加属性skin:enable="true"
@@ -57,6 +57,6 @@
 三、皮肤插件生成
 ===
 ~~~java
-        新建一个application模块，只放需要替换的color和drawable资源，保持与默认资源一致的资源名称，编译生成的apk文件就是皮肤插件，
-	可以将.apk后缀改为诸如.skin的形式。
+        新建一个application模块，只放需要替换的color和drawable资源，保持与默认资源一致的资源名称，编译生成的apk文件
+	就是皮肤插件，可以将.apk后缀改为诸如.skin的形式。
 ~~~
