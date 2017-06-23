@@ -3,7 +3,7 @@
 一、添加依赖
 ===
 
-**①在project gradle中添加：  **
+######①在project gradle中添加：  
 
 ~~~java
     allprojects {
@@ -15,7 +15,7 @@
 ~~~
 	
 	
-**-+②在module gradle中添加：  **
+######-+②在module gradle中添加：  
 ~~~java
         dependencies {
             ...
@@ -26,7 +26,7 @@
 二、使用
 ===
 
-**①在Application中：  **
+######①在Application中：  
 ~~~java
     @Override
     public void onCreate() {
@@ -36,20 +36,20 @@
     }
 ~~~
     
-**②需要替换皮肤的Activity继承SkinBaseActivity*
+######②需要替换皮肤的Activity继承SkinBaseActivity
 
-**③在xml文件里，  **
+######③在xml文件里，  
 ~~~java
         添加xmlns:skin="http://schemas.android.com/android/skin"
         给需要替换皮肤的View添加属性skin:enable="true"
 ~~~
 
-**④加载皮肤插件：  **
+######④加载皮肤插件：  
 ~~~java
         SkinManager.getInstance().applySkin(skinPath); //skinPath是皮肤插件的文件路径
 ~~~
         
-**⑤还原默认皮肤：  **
+######⑤还原默认皮肤：  
 ~~~java
         SkinManager.getInstance().restoreDefaultTheme();
 ~~~
